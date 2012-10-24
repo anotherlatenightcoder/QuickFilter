@@ -1,4 +1,4 @@
 QuickFilter
 ===========
 
-Javascript column filter for tables
+Filter html columns on the fly with highlighting using jQuery
