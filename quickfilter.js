@@ -15,7 +15,7 @@ jQuery('input#quickfilter').bind('keyup', function(){
             if (pos != 0) {
                 finalString = mainString.substring(0, pos);
             }
-            finalString += '<span class="srchslctn">'+searchstr.toUpperCase()+'</span>';
+            finalString += '<span style="background-color: yellow;">'+searchstr.toUpperCase()+'</span>';
             finalString += mainString.substring(pos+searchlen, mainString.length);
             jQuery(this).html(finalString);
        } else {
