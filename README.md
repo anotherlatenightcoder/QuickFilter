@@ -3,6 +3,11 @@ QuickFilter
 
 Filter html columns on the fly with highlighting using jQuery
 
+Demo
+====
+
+http://overtureofthewicked.com/github/QuickFilter/sample.html
+
 Instructions
 ============
 
