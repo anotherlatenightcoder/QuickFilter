@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
        jQuery.each(jQuery('table#filter tbody tr'), function(){
            jQuery(this).css('display','table-row');
        }); 
-       jQuery.each(jQuery('table#filter tbody tr td#col'), function(){
+       jQuery.each(jQuery('table#filter tbody tr td:first-child'), function(){
            var inputvalue = jQuery(this).text().toUpperCase();
            var pos = (inputvalue).indexOf(searchstr.toUpperCase());              
            if (pos != "-1") {
