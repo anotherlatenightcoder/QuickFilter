@@ -16,7 +16,7 @@ Instructions
 
 inputid = is the ID of the <input type="text">
 tableid = is the ID of the table you want to filter on (No nested tables)
-child = is the column that you want to filter on ex. 1, 2, 3 (dont use multiple columns)
+child = is the column that you want to filter on (index/even/odd/equation)
 
 Example:
 ========
