@@ -1,5 +1,7 @@
 function quickFilter(inputid, tableid, child) {
     child = typeof child !== 'undefined' ? child : 1;
+    $('table#'+tableid).append("<div id=\"noresults\">There are no Results</div>");
+    $('#noresults').hide();
     $('#'+inputid).bind('keyup', function(){
         var searchlen = ($(this).val()).length;
         var searchstr = ($(this).val()).toUpperCase();
@@ -26,9 +28,9 @@ function quickFilter(inputid, tableid, child) {
         });
         var count = $('table#'+tableid+' tbody tr:visible').length;
         if (count == 0) {
-            $('table#'+tableid).append("<div id=\"noresults\">There are no Results</div>");
+            $('#noresults').show();
         } else {
-            $("#noresults").remove();
+            $("#noresults").hide();
         }
     });
 }
